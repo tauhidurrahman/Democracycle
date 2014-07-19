@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutReport"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <LinearLayout
+        android:id="@+id/LinearLayoutImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/cameraButtonReport"
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_menu_camera"
+            android:onClick="onCaptureCamera"
+            android:text="Camera" />
+
+        <ImageView
+            android:id="@+id/imageViewReport"
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_menu_crop" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/imagetag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Tell us more." >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutThumbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    
+	    <Button
+	        android:id="@+id/thumbsup"
+	        android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_weight="1"
+	        android:layout_gravity="center"
+	        android:onClick="onClickThumbsUp"
+	        android:text="Thumbs\nUp"
+	        android:textSize="27dp"
+            android:textStyle="bold"/>
+	    
+	    <Button
+	        android:id="@+id/thumbsdown"
+	        android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_weight="1"
+	        android:layout_gravity="center"
+	        android:onClick="onClickThumbsDown"
+	        android:text="Thumbs\nDown"
+	        android:textSize="27dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

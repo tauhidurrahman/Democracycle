@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<TextView
+	    android:id="@+id/q1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_weight="1"
+	    android:background="@android:color/black"
+	    android:gravity="center"
+	    android:text="How physically challenging was this route?"
+	    android:textColor="@android:color/white"
+	    android:textSize="15dp" />
+	
+    <Spinner
+        android:id="@+id/question_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:entries="@array/Question1"
+        android:prompt="@string/Question1Prompt" />
+    
+    <TextView
+            android:id="@+id/q2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Considering road conditions due to weather and maintenance, the amount of traffic and space, how safe was this route?"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/question_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:entries="@array/Question2"
+        android:prompt="@string/Question2Prompt" />
+    
+    <TextView
+            android:id="@+id/q3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="How aesthetically beautiful was the route?"
+            android:background="@android:color/black"
+            android:textColor="@android:color/white"
+            android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/question_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5" 
+        android:entries="@array/Question3"
+        android:prompt="@string/Question3Prompt" />
+	
+    <LinearLayout
+        android:id="@+id/LinearLayoutSaveOrDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    
+	    <Button
+	        android:id="@+id/delete"
+	        android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_weight="1"
+	        android:layout_gravity="center"
+	        android:onClick="onClickDelete"
+	        android:text="Delete"
+	        android:textSize="27dp"
+            android:textStyle="bold"/>
+	    
+	    <Button
+	        android:id="@+id/save"
+	        android:layout_width="match_parent"
+            android:layout_height="144dp"
+            android:layout_weight="1"
+	        android:layout_gravity="center"
+	        android:onClick="onClickSave"
+	        android:text="Save"
+	        android:textSize="27dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
